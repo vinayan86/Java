@@ -13,7 +13,7 @@ BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 		int number=Integer.parseInt(br.readLine());
 		int sum=0;
 		System.out.print("The divisors of the number are");
-		for(int i=0;i<number;i++)
+		for(int i=1;i<number;i++)
 		{
 			if(number%i==0)
 			{
@@ -21,14 +21,15 @@ BufferedReader br=new BufferedReader(new InputStreamReader(System.in));
 				sum=sum+i;
 			}
 		}
-		System.out.println("The sum of the divisors are "+ sum);
+		
+		System.out.println("\nThe sum of the divisors are "+ sum);
 		if(sum==number)
 		{
-			System.out.print("It is a perfect number ");
+			System.out.println("It is a perfect number ");
 		}
 		else
 		{
-			System.out.print("It is not a perfect number ");
+			System.out.println("It is not a perfect number ");
 		}
 	}
 
